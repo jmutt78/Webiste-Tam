@@ -49,7 +49,7 @@ export const CTAContainer = styled.div`
     text-align: center;
     display: block;
     margin-bottom: 0px;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 28px;
   }
 

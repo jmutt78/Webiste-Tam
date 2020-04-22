@@ -43,7 +43,7 @@ const Footer = () => {
             />
           </ImageContainer>
           <CTAContainer>
-            <h3>Be the Body your Body Wants you to Be</h3>
+            <h3>Take care of your Body and your Body will take care of YOU</h3>
           </CTAContainer>
           <ButtonContainer>
             <Link to="/shop">

@@ -50,7 +50,9 @@ const Jumbotron = () => {
       <MDBContainer fluid className="mt-5 text-center">
         <MDBRow>
           <MDBCol>
-            <h1 className="h1">Be the Body your Body Wants you to Be</h1>
+            <h1 className="h1">
+              Take care of your Body and your Body will take care of YOU
+            </h1>
             <hr className="my-4" style={{ width: "30rem" }} />
           </MDBCol>
         </MDBRow>
