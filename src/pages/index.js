@@ -17,7 +17,7 @@ import Jumbotron from "../components/jumbotron"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
+    <Jumbotron />
     <MDBContainer></MDBContainer>
   </Layout>
 )

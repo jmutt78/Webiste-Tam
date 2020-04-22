@@ -1,4 +1,8 @@
 import React from "react"
+import styled from "styled-components"
+
+import hero from "../images/hero.png"
+
 import {
   MDBJumbotron,
   MDBBtn,
@@ -8,36 +12,50 @@ import {
   MDBIcon,
 } from "mdbreact"
 
+export const Hero = styled(MDBJumbotron)`
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(${hero});
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 800px;
+
+  h1 {
+    color: white;
+    text-align: center;
+    padding: 10rem 0 0 10rem;
+    color: #ffffff;
+    font-family: "brandon-grotesque", Sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 4.1px;
+    width: 80%;
+  }
+  @media (max-width: 980px) {
+    height: 600px;
+
+    h1 {
+      padding: 10rem 0 0 0;
+
+      font-size: 30px;
+      width: 100%;
+    }
+  }
+`
+
 const Jumbotron = () => {
   return (
-    <MDBJumbotron
-      fluid
-      style={{ backgroundColor: "#f5f5f5", boxShadow: "none" }}
-    >
+    <Hero fluid style={{ backgroundColor: "#f5f5f5", boxShadow: "none" }}>
       <MDBContainer fluid className="mt-5 text-center">
         <MDBRow>
           <MDBCol>
-            <h1 className="h1">Gatsby + MDBReact</h1>
-            <p className="text-primary lead my-4">
-              Kick off your next Gatsby project with this MDBReact starter.
-            </p>
-
+            <h1 className="h1">Be the Body your Body Wants you to Be</h1>
             <hr className="my-4" style={{ width: "30rem" }} />
-            <div className="pt-2">
-              <MDBBtn
-                href="https://github.com/zlutfi/gatsby-starter-mdbreact"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="primary"
-                className="waves-effect"
-              >
-                Download Now <MDBIcon fab icon="github" className="ml-2" />
-              </MDBBtn>
-            </div>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-    </MDBJumbotron>
+    </Hero>
   )
 }
 

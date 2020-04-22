@@ -10,12 +10,12 @@ export const Root = styled.div`
 export const TopContainer = styled.div`
   display: flex;
   margin-bottom: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
   border-bottom: 1px solid #79b3f1;
   img {
-    margin: 0 10px 25px 25px;
+    margin: 0 10px 15px 15px;
     justify-content: center;
     border-radius: 50%;
   }

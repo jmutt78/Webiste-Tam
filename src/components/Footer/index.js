@@ -36,7 +36,7 @@ const Footer = () => {
           <ImageContainer>
             <img
               src={logo}
-              width="100"
+              width="200"
               height="auto"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
