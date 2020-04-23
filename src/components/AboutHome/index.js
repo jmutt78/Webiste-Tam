@@ -95,7 +95,7 @@ export default () => (
   <Root>
     <MDBRow>
       <ImageWrapper sm="4">
-        <img src={about} alt="" />
+        <img src={about} alt="Image of Tamilee Webb" />
       </ImageWrapper>
       <TextContainer>
         <InnerContainer sm="4">
