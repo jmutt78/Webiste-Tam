@@ -50,10 +50,10 @@ export const InnerContainer = styled(MDBCard)`
     font-family: "brandon-grotesque", Sans-serif;
   }
   h3:after {
-    margin-left: 45px;
+    margin-left: 70px;
     content: "";
     height: 1px;
-    width: 68%;
+    width: 55%;
     background: #f77a24;
     display: block;
   }
@@ -83,11 +83,35 @@ export const InnerContainer = styled(MDBCard)`
     left: 0%;
     position: inherit;
     width: auto;
+
+    h3:after {
+      margin-left: 110px;
+      width: 45%;
+    }
   }
-  @media (max-width: 700px) {
+
+  @media (max-width: 767px) {
     top: 0%;
     left: 0%;
     position: inherit;
+
+    h3:after {
+      margin-left: 50px;
+      width: 62%;
+    }
+  }
+
+  @media (max-width: 575px) {
+    h3:after {
+      margin-left: 150px;
+      width: 38%;
+    }
+  }
+  @media (max-width: 400px) {
+    h3:after {
+      margin-left: 60px;
+      width: 60%;
+    }
   }
 `
 
