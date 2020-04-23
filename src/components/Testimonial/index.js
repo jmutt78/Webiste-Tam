@@ -73,7 +73,7 @@ export default () => {
   return (
     <Root>
       <section className="text-center my-5">
-        <h2 className="h1-responsive font-weight-bold my-5">Testimonials</h2>
+        <h2 className="h1-responsive font-weight-bold my-5">REAL RESULTS</h2>
 
         <MDBCarousel
           activeItem={1}
