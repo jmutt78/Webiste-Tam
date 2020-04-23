@@ -14,12 +14,14 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import AsSeen from "../components/AsSeen"
+import AboutHome from "../components/AboutHome"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Jumbotron />
     <AsSeen />
+    <AboutHome />
   </Layout>
 )
 
