@@ -13,7 +13,7 @@ import {
 } from "mdbreact"
 
 export const Hero = styled(MDBJumbotron)`
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(${hero});
 
   background-size: cover;
@@ -24,20 +24,21 @@ export const Hero = styled(MDBJumbotron)`
   h1 {
     color: white;
     text-align: center;
-    padding: 10rem 0 0 10rem;
+    padding: 10rem 0 0 0rem;
+    margin-left: 20rem;
     color: #ffffff;
     font-family: "brandon-grotesque", Sans-serif;
     font-size: 50px;
     font-weight: 300;
     letter-spacing: 4.1px;
-    width: 80%;
+    width: 75%;
   }
-  @media (max-width: 980px) {
+  @media (max-width: 1110px) {
     height: 600px;
 
     h1 {
       padding: 10rem 0 0 0;
-
+      margin-left: 0rem;
       font-size: 30px;
       width: 100%;
     }
