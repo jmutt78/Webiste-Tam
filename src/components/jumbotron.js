@@ -33,6 +33,11 @@ export const Hero = styled(MDBJumbotron)`
     letter-spacing: 4.1px;
     width: 75%;
   }
+  hr {
+    margin-right: 24rem;
+    width: 30rem;
+  }
+
   @media (max-width: 1110px) {
     height: 600px;
 
@@ -41,6 +46,11 @@ export const Hero = styled(MDBJumbotron)`
       margin-left: 0rem;
       font-size: 30px;
       width: 100%;
+    }
+    hr {
+      margin-right: 5rem;
+      align-object: center;
+      width: 10rem;
     }
   }
 `
@@ -54,7 +64,7 @@ const Jumbotron = () => {
             <h1 className="h1">
               Take care of your Body and your Body will take care of YOU
             </h1>
-            <hr className="my-4" style={{ width: "30rem" }} />
+            <hr className="my-4" />
           </MDBCol>
         </MDBRow>
       </MDBContainer>

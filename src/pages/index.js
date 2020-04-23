@@ -15,6 +15,8 @@ import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import AsSeen from "../components/AsSeen"
 import AboutHome from "../components/AboutHome"
+import Products from "../components/Products"
+import Testimonial from "../components/Testimonial"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +24,8 @@ const IndexPage = () => (
     <Jumbotron />
     <AsSeen />
     <AboutHome />
+    <Products />
+    <Testimonial />
   </Layout>
 )
 
