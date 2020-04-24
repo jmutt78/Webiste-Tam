@@ -15,7 +15,7 @@ import {
 } from "mdbreact"
 
 import about from "../../images/about.jpg"
-import ripple from "../../images/ripples.png"
+import ripple from "../../images/ripples.jpg"
 
 export const Root = styled(MDBContainer)`
   background: url(${ripple});
