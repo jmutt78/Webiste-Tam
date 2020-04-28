@@ -24,8 +24,8 @@ const IndexPage = () => (
     <Jumbotron />
     <AsSeen />
     <AboutHome />
-    <Products />
     <Testimonial />
+    <Products />
   </Layout>
 )
 

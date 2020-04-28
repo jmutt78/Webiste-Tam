@@ -18,6 +18,9 @@ export const Root = styled(MDBContainer)`
     margin: 20px;
     text-align: center;
   }
+  h2 {
+    font-weight: 350;
+  }
 `
 
 export const ImageWrapper = styled.div`

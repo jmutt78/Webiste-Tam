@@ -293,11 +293,6 @@ const NavBar = ({ siteTitle }) => {
             </LinkContainer>
           ))}
         </Nav>
-        <ButtonContainer>
-          <Link to="/book">
-            <Button variant="outline-secondary">BOOK Tamilee</Button>
-          </Link>
-        </ButtonContainer>
       </StyledNav>
     </header>
   )
@@ -312,3 +307,10 @@ NavBar.defaultProps = {
 }
 
 export default NavBar
+
+// <ButtonContainer>
+//   <Link to="/book">
+//     <Button variant="outline-secondary">BOOK Tamilee</Button>
+//   </Link>
+// </ButtonContainer>
+//

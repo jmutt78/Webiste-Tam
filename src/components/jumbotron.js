@@ -64,7 +64,6 @@ const Jumbotron = () => {
             <h1 className="h1">
               Take care of your Body and your Body will take care of YOU
             </h1>
-            <hr className="my-4" />
           </MDBCol>
         </MDBRow>
       </MDBContainer>
