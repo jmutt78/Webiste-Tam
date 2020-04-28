@@ -17,6 +17,7 @@ import AsSeen from "../components/AsSeen"
 import AboutHome from "../components/AboutHome"
 import Products from "../components/Products"
 import Testimonial from "../components/Testimonial"
+import MailingList from "../components/MailingList"
 
 const IndexPage = () => (
   <Layout>
@@ -26,6 +27,7 @@ const IndexPage = () => (
     <AboutHome />
     <Testimonial />
     <Products />
+    <MailingList />
   </Layout>
 )
 

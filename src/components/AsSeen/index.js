@@ -12,7 +12,6 @@ export const Root = styled(MDBContainer)`
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
   font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   .title {
     margin: 20px;

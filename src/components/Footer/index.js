@@ -45,11 +45,6 @@ const Footer = () => {
           <CTAContainer>
             <h3>Take care of your Body and your Body will take care of YOU</h3>
           </CTAContainer>
-          <ButtonContainer>
-            <Link to="/shop">
-              <Button variant="outline-secondary">Shop Video</Button>
-            </Link>
-          </ButtonContainer>
         </TopContainer>
         <CollumnContainer>
           <ServicesContainer>
