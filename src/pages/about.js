@@ -15,7 +15,7 @@ export const AboutRoot = styled.div`
 
 const AboutUs = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="About Tamilee" />
     <AboutRoot>
       <Dr />
     </AboutRoot>
