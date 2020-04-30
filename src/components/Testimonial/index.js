@@ -73,8 +73,8 @@ export default () => {
   return (
     <Root>
       <section className="text-center my-5">
-        <h3 className="h3-responsive font-weight-bold my-5">
-          TAMILEE - IN THEIR WORDS
+        <h3 className="h2-responsive font-weight-bold my-4">
+          Tamilee - in their words
         </h3>
 
         <MDBCarousel

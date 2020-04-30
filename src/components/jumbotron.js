@@ -13,8 +13,7 @@ import {
 } from "mdbreact"
 
 export const Hero = styled(MDBJumbotron)`
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-    url(${hero});
+  background: url(${hero});
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,16 +21,16 @@ export const Hero = styled(MDBJumbotron)`
   height: 800px;
 
   h1 {
-    color: white;
     text-align: center;
     padding: 10rem 0 0 0rem;
-    margin-left: 20rem;
-    color: #ffffff;
+    margin-left: 28rem;
+    text-shadow: white 0px 0px 1px;
+    color: black;
     font-family: "brandon-grotesque", Sans-serif;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 4.1px;
-    width: 75%;
+    width: 60%;
   }
   hr {
     margin-right: 24rem;

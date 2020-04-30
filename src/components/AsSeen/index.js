@@ -19,6 +19,7 @@ export const Root = styled(MDBContainer)`
   }
   h2 {
     font-weight: 350;
+    color: #36454f;
   }
 `
 

@@ -4,13 +4,13 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Contact from "../components/Contact"
+import Coach from "../components/Coach"
 
-const ContactUs = () => (
+const Coaching = () => (
   <Layout>
-    <SEO title="Contact Tamilee" />
-    <Contact />
+    <SEO title="Coaching" />
+    <Coach />
   </Layout>
 )
 
-export default ContactUs
+export default Coaching

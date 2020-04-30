@@ -17,7 +17,7 @@ import fitness from "../../images/women-fitness.jpg"
 export const Root = styled(MDBContainer)`
   padding-bottom: 5rem;
   padding-top: 3rem;
-
+  font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   h2 {
     font-weight: 350;
   }
@@ -25,8 +25,6 @@ export const Root = styled(MDBContainer)`
     margin: 20px;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande",
-      sans-serif;
   }
   img {
     width: 100%;

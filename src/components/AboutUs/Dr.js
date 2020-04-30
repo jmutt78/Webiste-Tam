@@ -7,6 +7,7 @@ export const Root = styled.div`
   position: relative;
   display: flex;
   min-height: 100vh;
+  font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   padding-right: 0%;
   @media (max-width: 767px) {
     min-height: auto;
