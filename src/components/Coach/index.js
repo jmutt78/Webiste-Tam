@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact"
 import { Button } from "react-bootstrap"
 
 import coach from "../../images/coaching.jpg"
@@ -10,7 +10,7 @@ export const Root = styled(MDBContainer)`
   padding-bottom: 5rem;
   padding-top: 3rem;
   font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-
+  color: #333333;
   h2 {
     font-weight: 350;
     margin: 20px;
@@ -25,14 +25,14 @@ export const Root = styled(MDBContainer)`
   }
   img {
     width: 100%;
-    height: 550px;
+    height: 680px;
     object-fit: cover;
   }
   .btn-outline-secondary {
     color: #fff;
     border-color: #79b3f1 !important;
     color: #79b3f1 !important;
-    margin: 0 0 0 0;
+    margin: 0 auto 0 auto;
     font-family: "Sf pro display", sans-serif;
     position: relative;
     font-size: 13px;
@@ -44,13 +44,16 @@ export const Root = styled(MDBContainer)`
     .btn-outline-secondary {
       margin: 0 0 3rem 0;
     }
+    img {
+      height: 450px;
+    }
   }
 `
 
-export const Card = styled.div`
+export const Card = styled(MDBCard)`
   display: flex;
 
-  padding: 0px 35px 35px 60px;
+  padding: 10px 35px 35px 60px;
   flex-direction: column;
   align-items: flex-start;
 
@@ -72,7 +75,6 @@ export const Card = styled.div`
   li {
     margin-bottom: 10px;
     padding-bottom: 10px;
-
     text-align: left;
   }
 
@@ -101,36 +103,38 @@ export default () => (
       </h4>
     </div>
     <MDBRow>
-      <MDBCol>
+      <MDBCol md="6" className="order-1">
         <Card>
-          <p>
-            Besides helping millions change their bodies, Tamilee has helped
-            other fitness professionals with their business goals, strategy for
-            branding, marketing, social media and resources.
-          </p>
-          <p>
-            Tamilee’s coaching expert goes beyond health & fitness; maybe you’re
-            looking to find balance between work and home, or you’re ready to go
-            from a job to your passion in life. Helping others success, discover
-            or transition is what Tamilee loves to do.
-          </p>
+          <MDBCardBody>
+            <p>
+              Besides helping millions change their bodies, Tamilee has helped
+              other fitness professionals with their business goals, strategy
+              for branding, marketing, social media and resources.
+            </p>
+            <p>
+              Tamilee’s coaching expert goes beyond health & fitness; maybe
+              you’re looking to find balance between work and home, or you’re
+              ready to go from a job to your passion in life. Helping others
+              success, discover or transition is what Tamilee loves to do.
+            </p>
 
-          <ul>
-            <li>Help you find the answers to your questions.</li>
-            <li>Help you design a plan for your needs.</li>
-            <li>
-              Eliminate any doubt or obstacles that is keeping you from your
-              goal.
-            </li>
-            <li>Inspire you daily to reach the next step toward the goal.</li>
-            <li>
-              Tools & techniques to help you identify and achieve your goals.
-            </li>
-          </ul>
+            <ul>
+              <li>Help you find the answers to your questions.</li>
+              <li>Help you design a plan for your needs.</li>
+              <li>
+                Eliminate any doubt or obstacles that is keeping you from your
+                goal.
+              </li>
+              <li>Inspire you daily to reach the next step toward the goal.</li>
+              <li>
+                Tools & techniques to help you identify and achieve your goals.
+              </li>
+            </ul>
+          </MDBCardBody>
           <Button variant="outline-secondary">Get Started</Button>
         </Card>
       </MDBCol>
-      <MDBCol>
+      <MDBCol md="6">
         <img
           src={coach}
           className="img-fluid z-depth-1"

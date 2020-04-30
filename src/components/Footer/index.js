@@ -57,7 +57,7 @@ const Footer = () => {
           <ServicesContainer>
             <h4>Shop</h4>
             <Link to="/videos">Videos</Link>
-            <Link to="/plans">Plans</Link>
+            <Link to="/webbworkouts">Webb Workouts</Link>
           </ServicesContainer>
           <ServicesContainer>
             <h4>Links</h4>

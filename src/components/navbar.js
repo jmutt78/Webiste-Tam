@@ -220,8 +220,8 @@ const NavBar = ({ siteTitle }) => {
       link: "/videos",
     },
     {
-      title: "Shop Plans",
-      link: "/plans",
+      title: "Webb Workouts",
+      link: "/webbworkouts",
     },
     {
       title: "Coaching",
