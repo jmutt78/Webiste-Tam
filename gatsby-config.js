@@ -1,3 +1,5 @@
+const wordpressUrl = `http://tamilee.flywheelsites.com/graphql`
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby + MDBReact`,
@@ -19,6 +21,14 @@ module.exports = {
         rule: {
           include: /assets/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `WPGraphql`,
+        fieldName: `wpgraphql`,
+        url: wordpressUrl,
       },
     },
     `gatsby-transformer-sharp`,

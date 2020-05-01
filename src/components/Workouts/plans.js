@@ -74,11 +74,11 @@ export default () => (
             <h4>{month} / Month</h4>
 
             <MDBCardText>* Billed as one payment of {price}</MDBCardText>
-            <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
-              <a href={link} target="_blank" rel="noopener noreferrer">
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
                 Join - {title}
-              </a>
-            </Button>
+              </Button>
+            </a>
           </MDBCardBody>
         </MDBCard>
       ))}

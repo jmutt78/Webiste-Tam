@@ -120,10 +120,11 @@ export default () => (
             <Card.Body variant="d-flex">
               <h3>{title}</h3>
               <Card.Text>{text}</Card.Text>
-
-              <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
-                <Link to={link}>Explore {type}</Link>
-              </Button>
+              <Link className=" mt-auto " to={link}>
+                <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
+                  Explore {type}
+                </Button>
+              </Link>
             </Card.Body>
           </Card>
         ))}

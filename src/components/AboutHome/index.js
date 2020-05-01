@@ -18,8 +18,6 @@ import about from "../../images/about.jpg"
 import ripple from "../../images/ripples.jpg"
 
 export const Root = styled(MDBContainer)`
-  background: url(${ripple});
-  background-repeat: repeat;
   margin: 5rem auto 5rem auto;
   display: felx;
 `
@@ -28,6 +26,7 @@ export const ImageWrapper = styled(MDBCol)`
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 3%;
   }
 `
 
