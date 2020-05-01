@@ -15,12 +15,7 @@ h3 {
     line-height: 1.6em;
     letter-spacing: 1px;
 }
-p {
-  color: #36454f;
-      font-size: 17px;
-      font-weight: 300;
 
-}
 `
 
 export const ImageContainer = styled(Image)`
@@ -35,6 +30,12 @@ export const RowContainer = styled(Row)`
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+
+  p {
+    color: #36454f;
+    font-weight: 400;
+  }
+
   @media (max-width: 770px) {
     flex-wrap: wrap;
   }

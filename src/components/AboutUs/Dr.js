@@ -89,6 +89,13 @@ export const BioContentWrapper = styled.div`
     align-items: flex-start;
   }
 
+  p {
+    font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande",
+      sans-serif;
+    color: #36454f;
+    font-weight: 400;
+  }
+
   h3 {
     margin-bottom: 20px;
     padding-bottom: 10px;

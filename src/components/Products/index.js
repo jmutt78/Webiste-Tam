@@ -6,7 +6,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
 import { CardGroup, Card, Button } from "react-bootstrap"
 
 import buns from "../../images/buns.jpg"
-import red from "../../images/tamilee-red.png"
+import red from "../../images/tamilee-red.jpg"
 import coach from "../../images/Tamilee-kneel.jpg"
 
 export const Root = styled(MDBContainer)`
@@ -70,6 +70,13 @@ export const Root = styled(MDBContainer)`
   }
 `
 
+export const ImageContainer = styled.div`
+  background-image: url(${props => props.image});
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+`
+
 const prodArr = [
   {
     type: "Digital",
@@ -87,7 +94,7 @@ const prodArr = [
       "You will learn that working out the way you WANT to work out is the BEST way to work out. Period. STOP thinking you have to suffer through dreadful, painful, high impact workouts you hate doing. Let me show you that when you are in control of FEELING FIT, you can, and will! ",
     image: red,
     back: "#ffd085",
-    link: "/Workouts",
+    link: "/webbworkouts",
   },
   {
     type: "Coaching",
@@ -96,7 +103,7 @@ const prodArr = [
       "Sometimes we need a little guidance to help reach our goals or take it to the next level.  Besides helping millions change their bodies, Tamilee has helped other fitness professionals with their business goals, strategy for branding, marketing, social media and resources.",
     image: coach,
     back: "#fff4e1",
-    link: "/Coaching",
+    link: "/coaching",
   },
 ]
 
@@ -109,7 +116,7 @@ export default () => (
       <CardGroup>
         {prodArr.map(({ type, image, title, text, back, link }) => (
           <Card style={{ background: back }}>
-            <Card.Img variant="top" src={image} />
+            <ImageContainer image={image} />
             <Card.Body variant="d-flex">
               <h3>{title}</h3>
               <Card.Text>{text}</Card.Text>

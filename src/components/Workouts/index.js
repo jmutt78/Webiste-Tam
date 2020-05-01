@@ -26,7 +26,7 @@ export const Hero = styled(MDBJumbotron)`
   h2 {
     text-align: center;
     padding: 10rem 0 0 0rem;
-    width: 80%;
+    width: 50%;
     text-shadow: white 0px 0px 1px;
     color: white;
     font-family: "brandon-grotesque", Sans-serif;
@@ -39,7 +39,7 @@ export const Hero = styled(MDBJumbotron)`
     text-align: center;
     color: white;
 
-    width: 80%;
+    width: 50%;
   }
 
   @media (max-width: 700px) {

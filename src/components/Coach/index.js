@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact"
 import { Button } from "react-bootstrap"
 
-import coach from "../../images/coaching.jpg"
+import tamilee from "../../images/tamilee-hand.jpg"
 
 export const Root = styled(MDBContainer)`
   padding-bottom: 5rem;
@@ -136,7 +136,7 @@ export default () => (
       </MDBCol>
       <MDBCol md="6">
         <img
-          src={coach}
+          src={tamilee}
           className="img-fluid z-depth-1"
           alt="Women working out to Tamilee Webb"
         />
