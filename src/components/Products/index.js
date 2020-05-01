@@ -93,7 +93,7 @@ const prodArr = [
     text:
       "You will learn that working out the way you WANT to work out is the BEST way to work out. Period. STOP thinking you have to suffer through dreadful, painful, high impact workouts you hate doing. Let me show you that when you are in control of FEELING FIT, you can, and will! ",
     image: red,
-    back: "#ffd085",
+    back: "#fff4e1",
     link: "/webbworkouts",
   },
   {
@@ -115,13 +115,13 @@ export default () => (
     <MDBRow>
       <CardGroup>
         {prodArr.map(({ type, image, title, text, back, link }) => (
-          <Card style={{ background: back }}>
+          <Card>
             <ImageContainer image={image} />
             <Card.Body variant="d-flex">
               <h3>{title}</h3>
               <Card.Text>{text}</Card.Text>
 
-              <Button variant="outline-secondary mt-auto btn btn-lg btn-block btn-primary ">
+              <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
                 <Link to={link}>Explore {type}</Link>
               </Button>
             </Card.Body>

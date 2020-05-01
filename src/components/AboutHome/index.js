@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
+import { Link } from "gatsby"
 import {
   MDBContainer,
   MDBRow,
@@ -135,9 +135,9 @@ export default () => (
               workout programs have consistently elevated her to the top of the
               Billboard charts.
             </p>
-            <a href="#">
+            <Link to="/about">
               Learn More <MDBIcon icon="angle-right" />
-            </a>
+            </Link>
           </MDBCardBody>
         </InnerContainer>
       </TextContainer>
