@@ -6,7 +6,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
 import { CardGroup, Card, Button } from "react-bootstrap"
 
 import buns from "../../images/buns.jpg"
-import red from "../../images/tamilee-red.jpg"
+import red from "../../images/red.jpg"
 import coach from "../../images/Tamilee-kneel.jpg"
 
 export const Root = styled(MDBContainer)`
