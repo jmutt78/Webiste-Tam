@@ -1,9 +1,9 @@
-import React from "react";
-import { graphql } from "gatsby";
-import styled from "styled-components";
+import React from "react"
+import { graphql } from "gatsby"
+import styled from "styled-components"
 
-import Layout from "../components/layout.js";
-import SEO from "../components/seo";
+import Layout from "../components/layout.js"
+import SEO from "../components/seo"
 
 export const Root = styled.div`
   margin-left: auto;
@@ -11,6 +11,7 @@ export const Root = styled.div`
   padding: 3rem 2rem 2rem;
   max-width: 940px;
   h1 {
+    margin-bottom: 40px;
     text-align: center;
     font-weight: bold;
     font-size: 2.25rem;
@@ -21,29 +22,20 @@ export const Root = styled.div`
     text-align: center;
   }
 
-  img {
-    width: 900px;
-    height: 450px;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    object-fit: cover;
-  }
-
   @media (max-width: 500px) {
     padding: 1rem 2rem 2rem;
   }
-`;
+`
 
 const Privacy = props => {
   const {
     data: {
-      wpgraphql: { page }
-    }
-  } = props;
+      wpgraphql: { page },
+    },
+  } = props
 
-  const { title, content } = page;
-  console.log(props);
+  const { title, content } = page
+  console.log(props)
   return (
     <Layout>
       <SEO title={title} />
@@ -52,10 +44,10 @@ const Privacy = props => {
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </Root>
     </Layout>
-  );
-};
+  )
+}
 
-export default Privacy;
+export default Privacy
 
 export const pageQuery = graphql`
   query GET_PAGE($id: ID!) {
@@ -68,4 +60,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
