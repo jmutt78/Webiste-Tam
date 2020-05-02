@@ -111,28 +111,33 @@ export const Author = styled.div`
   line-height: 20px;
 `
 
-export default ({ posts }) => (
-  <Root>
-    <Section>
-      <Container>
-        {posts.nodes.map(post => (
-          <CardContainer key={post.id}>
-            <div className="cardio">
-              <Link to={post.slug}>
-                <Card>
-                  <Image image={post.featuredImage.sourceUrl} />
-                  <Title>
-                    <h4>{post.title}</h4>
-                  </Title>
-                  <Author>
-                    <p>by {post.author.name}</p>
-                  </Author>
-                </Card>
-              </Link>
-            </div>
-          </CardContainer>
-        ))}
-      </Container>
-    </Section>
-  </Root>
-)
+const Blog = ({ posts }) => {
+  console.log(posts)
+  return (
+    <Root>
+      <Section>
+        <Container>
+          {posts.nodes.map(post => (
+            <CardContainer key={post.id}>
+              <div className="cardio">
+                <Link to={post.slug}>
+                  <Card>
+                    <Image image={post.featuredImage.sourceUrl} />
+                    <Title>
+                      <h4>{post.title}</h4>
+                    </Title>
+                    <Author>
+                      <p>by {post.author.name}</p>
+                    </Author>
+                  </Card>
+                </Link>
+              </div>
+            </CardContainer>
+          ))}
+        </Container>
+      </Section>
+    </Root>
+  )
+}
+
+export default Blog
