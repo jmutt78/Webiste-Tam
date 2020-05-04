@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import {
-  MDBContainer,
   MDBCarousel,
   MDBCarouselInner,
   MDBCarouselItem,
@@ -87,7 +86,7 @@ export default () => {
         >
           <MDBCarouselInner>
             {testArr.map(({ title, text, key }) => (
-              <MDBCarouselItem itemId={key}>
+              <MDBCarouselItem itemId={key} key={title}>
                 <p>
                   <MDBIcon icon="quote-left" /> {text}
                 </p>

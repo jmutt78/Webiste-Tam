@@ -3,14 +3,7 @@ import styled from "styled-components"
 
 import hero from "../images/hero.png"
 
-import {
-  MDBJumbotron,
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-} from "mdbreact"
+import { MDBJumbotron, MDBContainer, MDBRow, MDBCol } from "mdbreact"
 
 export const Hero = styled(MDBJumbotron)`
   background: url(${hero});

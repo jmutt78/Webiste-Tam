@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import { format, parseISO } from "date-fns"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout.js"

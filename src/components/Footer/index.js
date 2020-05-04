@@ -1,19 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Button } from "react-bootstrap"
-
 import {
   Root,
   TopContainer,
   CollumnContainer,
   CTAContainer,
   ImageContainer,
-  ButtonContainer,
-  HoursContainer,
   ServicesContainer,
   SocailContainer,
-  BottomContainer,
   FooterContainer,
 } from "./style"
 

@@ -32,12 +32,16 @@ export const Root = styled(MDBContainer)`
     color: #fff;
     border-color: #79b3f1 !important;
     color: #79b3f1 !important;
-    margin: 0 auto 0 auto;
+
     font-family: "Sf pro display", sans-serif;
     position: relative;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
+  }
+
+  a {
+    margin: 0 auto 0 auto;
   }
 
   @media (max-width: 784px) {
@@ -131,7 +135,9 @@ export default () => (
               </li>
             </ul>
           </MDBCardBody>
-          <Button variant="outline-secondary">Get Started</Button>
+          <a class="contact-item" href="mailto:tamilee.webb@me.com">
+            <Button variant="outline-secondary">Get Started</Button>
+          </a>
         </Card>
       </MDBCol>
       <MDBCol md="6">

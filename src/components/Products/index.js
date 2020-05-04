@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
+import { MDBContainer, MDBRow } from "mdbreact"
 import { CardGroup, Card, Button } from "react-bootstrap"
 
 import buns from "../../images/buns.jpg"
@@ -86,6 +86,7 @@ const prodArr = [
     image: buns,
     back: "#fff4e1",
     link: "/digital",
+    outsideLink: "https://digital.tamileewebb.com/",
   },
   {
     type: "Workouts",
@@ -114,20 +115,30 @@ export default () => (
     </div>
     <MDBRow>
       <CardGroup>
-        {prodArr.map(({ type, image, title, text, back, link }) => (
-          <Card>
-            <ImageContainer image={image} />
-            <Card.Body variant="d-flex">
-              <h3>{title}</h3>
-              <Card.Text>{text}</Card.Text>
-              <Link className=" mt-auto " to={link}>
-                <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
-                  Explore {type}
-                </Button>
-              </Link>
-            </Card.Body>
-          </Card>
-        ))}
+        {prodArr.map(
+          ({ type, image, title, text, back, link, outsideLink }) => (
+            <Card key={title}>
+              <ImageContainer image={image} />
+              <Card.Body variant="d-flex">
+                <h3>{title}</h3>
+                <Card.Text>{text}</Card.Text>
+                {outsideLink ? (
+                  <a className=" mt-auto" href={outsideLink}>
+                    <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
+                      Explore {type}
+                    </Button>
+                  </a>
+                ) : (
+                  <Link className=" mt-auto" to={link}>
+                    <Button variant="outline-primary mt-auto btn btn-lg btn-block btn-primary ">
+                      Explore {type}
+                    </Button>
+                  </Link>
+                )}
+              </Card.Body>
+            </Card>
+          )
+        )}
       </CardGroup>
     </MDBRow>
   </Root>

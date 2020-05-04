@@ -1,15 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
-  MDBIcon,
-  MDBInput,
-} from "mdbreact"
+import { MDBContainer, MDBRow, MDBCol, MDBInput } from "mdbreact"
 import { Button } from "react-bootstrap"
 
 import fitness from "../../images/women-fitness.jpg"

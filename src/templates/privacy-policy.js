@@ -35,7 +35,7 @@ const Privacy = props => {
   } = props
 
   const { title, content } = page
-  console.log(props)
+
   return (
     <Layout>
       <SEO title={title} />

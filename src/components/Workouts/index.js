@@ -7,13 +7,10 @@ import {
   MDBCol,
   MDBJumbotron,
   MDBCardBody,
-  MDBBtn,
   MDBCard,
 } from "mdbreact"
-import { Button } from "react-bootstrap"
 
 import Plans from "./plans"
-import logo from "../../images/logo.jpg"
 import coach from "../../images/coaching.jpg"
 import hands from "../../images/hands.jpg"
 

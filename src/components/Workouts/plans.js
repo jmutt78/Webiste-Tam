@@ -3,10 +3,7 @@ import styled from "styled-components"
 
 import {
   MDBCard,
-  MDBCardTitle,
-  MDBBtn,
   MDBCardGroup,
-  MDBCardImage,
   MDBCardText,
   MDBCardBody,
   MDBContainer,

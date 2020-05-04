@@ -3,8 +3,6 @@ import styled from "styled-components"
 
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
 
-import curl from "../../images/reverse-curl.jpg"
-
 export const Root = styled(MDBContainer)`
   margin-top: 50px;
   margin-left: auto;

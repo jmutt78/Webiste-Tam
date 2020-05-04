@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
+import { MDBContainer } from "mdbreact"
 
 import buns from "../../images/buns.jpg"
 import espn from "../../images/espn.png"

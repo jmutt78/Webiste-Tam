@@ -56,7 +56,7 @@ const Post = props => {
   } = props
 
   const { title, content, date, featuredImage } = post
-  console.log(featuredImage.sourceUrl)
+
   return (
     <Layout>
       <SEO title={title} />

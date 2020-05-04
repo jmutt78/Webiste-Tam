@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-import { Navbar, Nav, NavDropdown, Button, Accordion } from "react-bootstrap"
+import { Navbar, Nav, NavDropdown, Accordion } from "react-bootstrap"
 
 import logo from "../images/logo.jpg"
 
@@ -218,6 +218,7 @@ const NavBar = ({ siteTitle }) => {
     {
       title: "Shop Videos",
       link: "/videos",
+      outsideLink: "https://digital.tamileewebb.com/",
     },
     {
       title: "Webb Workouts",
@@ -264,13 +265,19 @@ const NavBar = ({ siteTitle }) => {
               </Accordion.Collapse>
             ))}
           </Accordion>
-          {otherLink.map(({ title, link }) => (
+          {otherLink.map(({ title, link, outsideLink }) => (
             <Accordion key={title}>
-              <div className="acord">
-                <Link to={link} activeClassName="active">
-                  {title}
-                </Link>
-              </div>
+              {outsideLink ? (
+                <div className="acord">
+                  <a href={outsideLink}>{title}</a>
+                </div>
+              ) : (
+                <div className="acord">
+                  <Link to={link} activeClassName="active">
+                    {title}
+                  </Link>
+                </div>
+              )}
             </Accordion>
           ))}
         </Navbar.Collapse>
@@ -285,11 +292,15 @@ const NavBar = ({ siteTitle }) => {
               </NavDropdown.Item>
             ))}
           </NavDrop>
-          {otherLink.map(({ title, link }) => (
+          {otherLink.map(({ title, link, outsideLink }) => (
             <LinkContainer key={title}>
-              <Link to={link} activeClassName="active">
-                {title}
-              </Link>
+              {outsideLink ? (
+                <a href={outsideLink}>{title}</a>
+              ) : (
+                <Link to={link} activeClassName="active">
+                  {title}
+                </Link>
+              )}
             </LinkContainer>
           ))}
         </Nav>

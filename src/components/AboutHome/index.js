@@ -5,17 +5,12 @@ import {
   MDBContainer,
   MDBRow,
   MDBCol,
-  MDBBtn,
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
   MDBIcon,
 } from "mdbreact"
 
 import about from "../../images/about.jpg"
-import ripple from "../../images/ripples.jpg"
 
 export const Root = styled(MDBContainer)`
   margin: 5rem auto 5rem auto;
@@ -118,7 +113,7 @@ export default () => (
   <Root>
     <MDBRow>
       <ImageWrapper sm="4">
-        <img src={about} alt="Image of Tamilee Webb" />
+        <img src={about} alt="Tamilee Webb" />
       </ImageWrapper>
       <TextContainer>
         <InnerContainer sm="4">
