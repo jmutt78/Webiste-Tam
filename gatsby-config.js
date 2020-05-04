@@ -2,9 +2,11 @@ const wordpressUrl = `https://tamilee.flywheelsites.com/graphql`
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby + MDBReact`,
-    description: `Kick off your next, great Gatsby project with this default starter.`,
-    author: `@zlidev`,
+    title: ` Tamilee Webb Workout, Fitness & Exercise Products`,
+    description: `Tamilee Webb Fitness Instructor, Workout DVDs & Exercise Products. Let Tamilee Webb Help You Get Into Shape. Order Your Tamilee Webb Workout DVDs And Exercise Products`,
+    author: `@justinmcintoshs`,
+    siteUrl: `https://www.tamileewebb.com/`,
+    image: "/images/about.jpeg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -44,7 +46,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

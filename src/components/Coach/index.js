@@ -12,9 +12,12 @@ export const Root = styled(MDBContainer)`
   font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   color: #333333;
   h2 {
-    font-weight: 350;
-    margin: 20px;
     text-align: center;
+    margin-bottom: 35px;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.3em;
+    letter-spacing: 1.7px;
   }
   h4 {
     margin: 20px;

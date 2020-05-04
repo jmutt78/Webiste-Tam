@@ -11,11 +11,12 @@ export const Root = styled.div`
   padding: 3rem 2rem 2rem;
   max-width: 940px;
   h1 {
-    margin-bottom: 40px;
     text-align: center;
-    font-weight: bold;
-    font-size: 2.25rem;
-    line-height: 1.1;
+    margin-bottom: 35px;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.3em;
+    letter-spacing: 1.7px;
   }
 
   .date {
