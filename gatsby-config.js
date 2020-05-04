@@ -1,4 +1,4 @@
-const wordpressUrl = `http://tamilee.flywheelsites.com/graphql`
+const wordpressUrl = `https://tamilee.flywheelsites.com/graphql`
 
 module.exports = {
   siteMetadata: {
