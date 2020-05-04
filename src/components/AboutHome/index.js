@@ -130,7 +130,7 @@ export default () => (
               Billboard charts.
             </p>
             <Link to="/about">
-              Learn More <MDBIcon icon="angle-right" />
+              About Tamilee <MDBIcon icon="angle-right" />
             </Link>
           </MDBCardBody>
         </InnerContainer>
