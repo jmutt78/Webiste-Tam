@@ -48,23 +48,20 @@ export const Root = styled.div`
 const testArr = [
   {
     key: "1",
-    title: `Name 1`,
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`,
+    title: `Deanne R - 43 Years Old`,
+    text: `Tamilee is a fantastic personal trainer as she's knowledgeable, experienced and attentive.  She keeps workouts fresh by mixing up routines that are challenging for whatever level you're at and keeps her eye on you the whole time to make sure you're doing the exercise correctly to prevent any injuries.  In a very short period of time, I was able to accomplish my goal which was to build muscle/gain strength.  I now feel much stronger especially in my upper body and my legs.  I've worked with trainers in the past and Tamilee by far is the best one I've ever worked with and I highly recommend her!`,
   },
   {
     key: "2",
-    title: `Name 2`,
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`,
+    title: `L.B. - 53 Years Old`,
+    text: `Frustrated with my inability to lose weight, despite my regular gym workouts of weights, machines and cardio, I turned to Tamilee for 8 weeks of one-on-one fitness training.  Twice a week I worked out with Tamilee.  Her training went beyond physical, and incorporated nutritional direction for my mesomorph body-type.  Her Master’s degree in Exercise Science was evident in each targeted, fresh and challenging workout routine.  I gained strength, tone and endurance each week and lost 10 pounds and 8.5 inches.
+
+I’ve had fitness trainers over the years, but do not feel previous trainers were as knowledgeable, inspiring or invested as Tamilee.  She encourages while holding you accountable with her no-nonsense approach.  My energy level has increased and I am enthused by the weight loss and body tone I’ve achieved in this short time span.   I plan to continue with Tamilee’s customized on-line fitness program to maintain the success I’ve had thus far and continue my progress.  I highly recommend Tamilee’s training services, particularly for women in their 50’s and 60’s, as she has a deep understanding of the hormonal body changes and challenges that transpire in these years.`,
   },
   {
     key: "3",
-    title: `Name 3`,
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`,
-  },
-  {
-    key: "4",
-    title: `Name 4`,
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`,
+    title: `Lisa N - 43 Years Old`,
+    text: `After remembering Abs of Steel as one of my favorite workouts and doing a quick search to see what Tamilee was up to I stumbled across Webb Workouts; I'm so glad I did!  Not only did I find all of the classic workouts I knew and loved - the absolute best added bonus was Tamilee's oversight.  I signed up for the four-week personal plan and, following a call to establish what I was looking to achieve, I received my personal calendar.  Tamilee was there every step of the way with encouragement and tips.  It's clear she's passionate about helping and supporting every one of her members.  She's very involved in both the website (she responds to every comment!) and the Facebook group.  I had such an amazing experience I just signed both my mother-in-law up for account as I think she'll love Webb Workouts as much as I do!  `,
   },
 ]
 
