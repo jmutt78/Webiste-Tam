@@ -13,9 +13,10 @@ import {
 import Plans from "./plans"
 import coach from "../../images/coaching.jpg"
 import hands from "../../images/hands.jpg"
+import curls from "../../images/curls.jpg"
 
 export const Hero = styled(MDBJumbotron)`
-  background: url(${coach});
+  background: url(${curls});
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -24,7 +25,7 @@ export const Hero = styled(MDBJumbotron)`
     text-align: center;
     padding: 10rem 0 0 0rem;
     width: 50%;
-    text-shadow: white 0px 0px 1px;
+    text-shadow: #79b3f1 0px 0px 1px;
     color: white;
     font-family: "brandon-grotesque", Sans-serif;
     font-size: 50px;
@@ -35,7 +36,7 @@ export const Hero = styled(MDBJumbotron)`
   h4 {
     text-align: center;
     color: white;
-
+    text-shadow: #79b3f1 0px 0px 0.5px;
     width: 50%;
   }
 
