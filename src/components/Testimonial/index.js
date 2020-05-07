@@ -65,7 +65,7 @@ I’ve had fitness trainers over the years, but do not feel previous trainers we
   },
   {
     key: '4',
-    title: `Unkown`,
+    title: `Debbie K  - 50 Years Old`,
     text: `Thanks to Tamilee’s coaching, I reached my goal to be in the best shape of my life on my 50th birthday last year. I lost an overall total of 11.5 inches in the 12-week program, and I feel great. I love to eat healthier and workout now. Our conference calls, messages, emails, texts and her positive attitude (one of her best attributes) really kept me motivated to follow through. I have remained on track since then by following her website monthly workout calendars. I have lost a total of 30 pounds since I started working out with her. I love that her videos clearly explain techniques on what to do and what not to do. I also like that she asks for input on what new videos we would like to see in the future. I don’t feel anyone could find a better coach anywhere so if you are looking to get healthier then definitely give her website a chance to change your life. She definitely changed mine for the better.`,
   },
 ]
