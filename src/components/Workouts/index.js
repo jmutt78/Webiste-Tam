@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 import {
   MDBContainer,
@@ -8,26 +8,29 @@ import {
   MDBJumbotron,
   MDBCardBody,
   MDBCard,
-} from "mdbreact"
+} from 'mdbreact'
 
-import Plans from "./plans"
-import coach from "../../images/coaching.jpg"
-import hands from "../../images/hands.jpg"
-import curls from "../../images/curls.jpg"
+import Plans from './plans'
+import coach from '../../images/coaching.jpg'
+import hands from '../../images/hands.jpg'
+import curls from '../../images/curls.jpg'
+import grey from '../../images/grey-women.jpg'
+import yoga from '../../images/yoga-mat.jpg'
 
 export const Hero = styled(MDBJumbotron)`
-  background: url(${curls});
+  background: url(${grey});
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   height: 600px;
 
   h2 {
     text-align: center;
-    padding: 10rem 0 0 0rem;
-    width: 50%;
-    text-shadow: #79b3f1 0px 0px 1px;
-    color: white;
-    font-family: "brandon-grotesque", Sans-serif;
+
+    width: 100%;
+
+    color: black;
+    font-family: 'brandon-grotesque', Sans-serif;
     font-size: 50px;
     font-weight: 600;
     letter-spacing: 4.1px;
@@ -35,23 +38,21 @@ export const Hero = styled(MDBJumbotron)`
 
   h4 {
     text-align: center;
-    color: white;
-    text-shadow: #79b3f1 0px 0px 0.5px;
-    width: 50%;
+    color: black;
   }
 
   @media (max-width: 700px) {
     height: 600px;
     background-size: fit;
     h2 {
-      padding: 10rem 0 0 0;
+      padding: 2rem 0 0 0;
       margin-left: 0rem;
       font-size: 30px;
       width: 100%;
     }
     h4 {
       text-align: center;
-      color: white;
+
       font-size: 1rem;
       width: 100%;
     }
@@ -59,7 +60,7 @@ export const Hero = styled(MDBJumbotron)`
 `
 
 export const Tammy = styled(MDBCol)`
-  background: url(${hands});
+  background: url(${yoga});
   background-size: cover;
   background-repeat: no-repeat;
   height: 450px;
@@ -71,7 +72,7 @@ export const Tammy = styled(MDBCol)`
 
 export const Root = styled(MDBContainer)`
   padding-bottom: 5rem;
-  font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  font-family: 'Helvetica', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
   color: #333333;
   h2 {
     font-weight: 350;
@@ -120,7 +121,7 @@ export const Card = styled(MDBCard)`
 
 export default () => (
   <div>
-    <Hero fluid style={{ backgroundColor: "#f5f5f5", boxShadow: "none" }}>
+    <Hero fluid style={{ backgroundColor: '#f5f5f5', boxShadow: 'none' }}>
       <MDBRow>
         <MDBCol>
           <div className="title">
@@ -147,7 +148,7 @@ export default () => (
             our bodies change. I totally get it -- because I'm right there with
             you! We have shifted from wanting to just "look" fit to also wanting
             to "FEEL" fit. We just want to wake up and FEEL good, strong, and
-            able to move.{" "}
+            able to move.{' '}
           </p>
           <p>Can I get an amen? </p>
           <p>
@@ -166,16 +167,16 @@ export default () => (
             <strong>BEST shape of your life!</strong>
           </p>
           <p>
-            Except, now you can do it{" "}
+            Except, now you can do it{' '}
             <strong>
-              just the way you want it, from the convenience of your home{" "}
+              just the way you want it, from the convenience of your home{' '}
             </strong>
             (or anywhere else you have your phone/tablet/computer)!&nbsp;
           </p>
           <p>
-            Except, now you can do it{" "}
+            Except, now you can do it{' '}
             <strong>
-              just the way you want it, from the convenience of your home{" "}
+              just the way you want it, from the convenience of your home{' '}
             </strong>
             (or anywhere else you have your phone/tablet/computer)!&nbsp;
           </p>
@@ -207,7 +208,7 @@ export default () => (
                   videos.&nbsp;
                 </li>
               </ol>
-              <p style={{ marginTop: "30px" }}>
+              <p style={{ marginTop: '30px' }}>
                 <strong>
                   Did I mention that you can access this from anywhere? Even on
                   your phone. Even in the hotel room that has no DVD player.
