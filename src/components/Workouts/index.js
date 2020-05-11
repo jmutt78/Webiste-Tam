@@ -26,10 +26,10 @@ export const Hero = styled(MDBJumbotron)`
 
   h2 {
     text-align: center;
-
+    text-shadow: 1px 1px 2px black;
     width: 100%;
 
-    color: black;
+    color: #79b3f1;
     font-family: 'brandon-grotesque', Sans-serif;
     font-size: 50px;
     font-weight: 600;
@@ -38,7 +38,8 @@ export const Hero = styled(MDBJumbotron)`
 
   h4 {
     text-align: center;
-    color: black;
+    color: #79b3f1;
+    text-shadow: 2px 1px 2px black;
   }
 
   @media (max-width: 700px) {
