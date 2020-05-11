@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
 import {
   Root,
@@ -10,14 +10,14 @@ import {
   ServicesContainer,
   SocailContainer,
   FooterContainer,
-} from "./style"
+} from './style'
 
-import logo from "../../images/logo.jpg"
-import FaceBook from "../../../assets/facebook.svg"
-import Insta from "../../../assets/instagram.svg"
-import Linkedin from "../../../assets/linkedin.svg"
-import Mail from "../../../assets/mail.svg"
-import YouTube from "../../../assets/youtube.svg"
+import logo from '../../images/logo.jpg'
+import FaceBook from '../../../assets/facebook.svg'
+import Insta from '../../../assets/instagram.svg'
+import Linkedin from '../../../assets/linkedin.svg'
+import Mail from '../../../assets/mail.svg'
+import YouTube from '../../../assets/youtube.svg'
 
 function getYear() {
   return new Date().getFullYear()
@@ -52,7 +52,7 @@ const Footer = () => {
           <ServicesContainer>
             <h4>Shop</h4>
             <Link to="/videos">Videos</Link>
-            <Link to="/webbworkouts">Webb Workouts</Link>
+            <a href="https://digital.tamileewebb.com/">Webb Workouts</a>
           </ServicesContainer>
           <ServicesContainer>
             <h4>Links</h4>
