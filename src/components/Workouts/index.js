@@ -11,6 +11,7 @@ import {
 } from 'mdbreact'
 
 import Plans from './plans'
+import Results from './results'
 import coach from '../../images/coaching.jpg'
 import hands from '../../images/hands.jpg'
 import curls from '../../images/curls.jpg'
@@ -39,7 +40,7 @@ export const Hero = styled(MDBJumbotron)`
   h4 {
     text-align: center;
     color: #79b3f1;
-    text-shadow: 2px 1px 2px black;
+    text-shadow: 1px 1px 1px black;
   }
 
   @media (max-width: 700px) {
@@ -93,6 +94,12 @@ export const Root = styled(MDBContainer)`
   a {
     color: #79b3f1;
   }
+  hr {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    border-top: 1.5px solid #f77a24;
+    width: 10%;
+  }
 `
 
 export const Card = styled(MDBCard)`
@@ -127,6 +134,7 @@ export default () => (
         <MDBCol>
           <div className="title">
             <h2>Webb Workouts</h2>
+
             <h4>
               Created by Tamilee Webb best selling author and fitness coach. Her
               passion for health and fitness will help you achieve your fitness
@@ -140,6 +148,7 @@ export default () => (
       <Card>
         <MDBCardBody>
           <h4>UNLIMITED ACCESS TO WORKOUT VIDEOS</h4>
+          <hr />
           <p>
             Fads come and go; outfits, hairstyles, and socks seem to change the
             more time passes.
@@ -221,6 +230,7 @@ export default () => (
         </MDBRow>
       </Card>
       <Plans />
+      <Results />
     </Root>
   </div>
 )
