@@ -12,7 +12,7 @@ import {
   FooterContainer,
 } from './style'
 
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.png'
 import FaceBook from '../../../assets/facebook.svg'
 import Insta from '../../../assets/instagram.svg'
 import Linkedin from '../../../assets/linkedin.svg'

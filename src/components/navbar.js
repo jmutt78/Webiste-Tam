@@ -1,11 +1,11 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
-import { Navbar, Nav, NavDropdown, Accordion } from "react-bootstrap"
+import { Navbar, Nav, NavDropdown, Accordion } from 'react-bootstrap'
 
-import logo from "../images/logo.jpg"
+import logo from '../images/logo.png'
 
 const StyledNav = styled(Navbar)`
   font-size: 15px;
@@ -13,7 +13,7 @@ const StyledNav = styled(Navbar)`
   text-decoration: none;
   padding: 0.5em 1em;
   margin: 0 auto;
-  font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  font-family: 'Helvetica', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
   text-transform: uppercase;
   .active {
     color: #79b3f1;
@@ -201,36 +201,36 @@ export const LinkContainer = styled.div`
 const NavBar = ({ siteTitle }) => {
   const serviceLink = [
     {
-      title: "About",
-      link: "/about",
+      title: 'About',
+      link: '/about',
     },
     {
-      title: "Podcast",
-      link: "/podcast",
+      title: 'Podcast',
+      link: '/podcast',
     },
     {
-      title: "Contact",
-      link: "/contact",
+      title: 'Contact',
+      link: '/contact',
     },
   ]
 
   const otherLink = [
     {
-      title: "Shop Videos",
-      link: "/videos",
-      outsideLink: "https://digital.tamileewebb.com/",
+      title: 'Shop Videos',
+      link: '/videos',
+      outsideLink: 'https://digital.tamileewebb.com/',
     },
     {
-      title: "Webb Workouts",
-      link: "/webbworkouts",
+      title: 'Webb Workouts',
+      link: '/webbworkouts',
     },
     {
-      title: "Coaching",
-      link: "/coaching",
+      title: 'Coaching',
+      link: '/coaching',
     },
     {
-      title: "Blog",
-      link: "/blog",
+      title: 'Blog',
+      link: '/blog',
     },
   ]
   return (
@@ -258,7 +258,7 @@ const NavBar = ({ siteTitle }) => {
             {serviceLink.map(({ title, link }) => (
               <Accordion.Collapse eventKey="1" key={title}>
                 <div className="menu-collapse">
-                  <Link to={link} activeStyle={{ color: "#79b3f1" }}>
+                  <Link to={link} activeStyle={{ color: '#79b3f1' }}>
                     {title}
                   </Link>
                 </div>
@@ -286,7 +286,7 @@ const NavBar = ({ siteTitle }) => {
           <NavDrop title="Tamilee" className="nav-dropdown">
             {serviceLink.map(({ title, link }) => (
               <NavDropdown.Item key={title}>
-                <Link to={link} activeStyle={{ color: "#79b3f1" }}>
+                <Link to={link} activeStyle={{ color: '#79b3f1' }}>
                   {title}
                 </Link>
               </NavDropdown.Item>
