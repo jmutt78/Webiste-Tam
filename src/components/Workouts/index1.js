@@ -15,15 +15,14 @@ import Results from './results'
 import coach from '../../images/coaching.jpg'
 import hands from '../../images/hands.jpg'
 import curls from '../../images/curls.jpg'
-import workouthero from '../../images/workouthero.png'
+import grey from '../../images/grey-women.jpg'
 import yoga from '../../images/yoga-mat.jpg'
-import webb from '../../images/webb.jpg'
 
 export const Hero = styled(MDBJumbotron)`
-  background: url(${workouthero});
-  background-position: center center;
+  background: url(${grey});
+  background-size: cover;
   background-repeat: no-repeat;
-
+  background-position: center center;
   height: 600px;
 
   h2 {
@@ -45,9 +44,8 @@ export const Hero = styled(MDBJumbotron)`
   }
 
   @media (max-width: 700px) {
-    height: 500px;
-    background-position: 5.5% 50%;
-
+    height: 600px;
+    background-size: fit;
     h2 {
       padding: 2rem 0 0 0;
       margin-left: 0rem;
@@ -70,7 +68,6 @@ export const Tammy = styled(MDBCol)`
   height: 450px;
   border-radius: 15px !important;
   @media (max-width: 700px) {
-    background-position: 50% 50%;
     margin: 15px;
   }
 `
@@ -110,7 +107,7 @@ export const Card = styled(MDBCard)`
   border-radius: 15px !important;
   background-color: #fff;
   padding: 0px 30px 30px 60px;
-  box-shadow: 0 0px 0px;
+  box-shadow: 0 1px 2px hsla(0, 0%, 4%, 0.1);
 
   h4 {
     margin-bottom: 25px;
@@ -132,16 +129,72 @@ export const Card = styled(MDBCard)`
 
 export default () => (
   <div>
-    <Hero
-      fluid
-      style={{ backgroundColor: '#f5f5f5', boxShadow: 'none' }}
-    ></Hero>
+    <Hero fluid style={{ backgroundColor: '#f5f5f5', boxShadow: 'none' }}>
+      <MDBRow>
+        <MDBCol>
+          <div className="title">
+            <h2>Webb Workouts</h2>
+
+            <h4>
+              Created by Tamilee Webb best selling author and fitness coach. Her
+              passion for health and fitness will help you achieve your fitness
+              goals.
+            </h4>
+          </div>
+        </MDBCol>
+      </MDBRow>
+    </Hero>
     <Root>
       <Card>
+        <MDBCardBody>
+          <h4>UNLIMITED ACCESS TO WORKOUT VIDEOS</h4>
+          <hr />
+          <p>
+            Fads come and go; outfits, hairstyles, and socks seem to change the
+            more time passes.
+          </p>
+          <p>
+            But those aren't the only things that have changed! As time passes,
+            our bodies change. I totally get it -- because I'm right there with
+            you! We have shifted from wanting to just "look" fit to also wanting
+            to "FEEL" fit. We just want to wake up and FEEL good, strong, and
+            able to move.{' '}
+          </p>
+          <p>Can I get an amen? </p>
+          <p>
+            I asked what you were doing when you were in the best shape of your
+            life, and well, that makes two of us!
+          </p>
+          <p>
+            However, we are now in a time where we have shifted away from VHS to
+            DVD, to all things DIGITAL.
+          </p>
+          <p>
+            So guess what! Design Your Fit is a monthly membership site that was
+            designed for you to do the&nbsp;
+            <strong>SAME great tried-and-true workouts</strong>&nbsp;that we
+            know worked for you when you were in the&nbsp;
+            <strong>BEST shape of your life!</strong>
+          </p>
+          <p>
+            Except, now you can do it{' '}
+            <strong>
+              just the way you want it, from the convenience of your home{' '}
+            </strong>
+            (or anywhere else you have your phone/tablet/computer)!&nbsp;
+          </p>
+          <p>
+            Except, now you can do it{' '}
+            <strong>
+              just the way you want it, from the convenience of your home{' '}
+            </strong>
+            (or anywhere else you have your phone/tablet/computer)!&nbsp;
+          </p>
+        </MDBCardBody>
         <MDBRow>
           <MDBCol md="6">
             <MDBCardBody>
-              <p>Webb Workouts looks something like this:&nbsp;</p>
+              <p>Design Your Fit looks something like this:&nbsp;</p>
               <ol>
                 <li>
                   <strong>You decide how long</strong>&nbsp;you have to workout:

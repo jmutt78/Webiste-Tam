@@ -61,7 +61,9 @@ const StyledNav = styled(Navbar)`
   img {
     margin: 0;
     border-radius: 50%;
+    width: 170px;
     @media (max-width: 575px) {
+      width: 150px;
       padding: 10px;
     }
     @media (max-width: 1077px) {
