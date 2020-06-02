@@ -10,6 +10,8 @@ import {
   MDBCard,
 } from 'mdbreact'
 
+import { Jumbotron } from 'react-bootstrap'
+
 import Plans from './plans'
 import Results from './results'
 import coach from '../../images/coaching.jpg'
@@ -19,12 +21,13 @@ import workouthero from '../../images/workouthero.png'
 import yoga from '../../images/yoga-mat.jpg'
 import webb from '../../images/webb.jpg'
 
-export const Hero = styled(MDBJumbotron)`
+export const Hero = styled(Jumbotron)`
   background: url(${workouthero});
   background-position: center center;
   background-repeat: no-repeat;
-
+  background-size: cover;
   height: 600px;
+  width: 100%;
 
   h2 {
     text-align: center;
@@ -42,6 +45,16 @@ export const Hero = styled(MDBJumbotron)`
     text-align: center;
     color: #79b3f1;
     text-shadow: 1px 1px 1px black;
+  }
+
+  @media (max-width: 1400px) {
+    height: 500px;
+    background-position: 5.5% 50%;
+  }
+
+  @media (max-width: 1280px) {
+    height: 500px;
+    background-position: 100% 100%;
   }
 
   @media (max-width: 700px) {
@@ -106,7 +119,6 @@ export const Root = styled(MDBContainer)`
 `
 
 export const Card = styled(MDBCard)`
-  margin-top: -100px;
   border-radius: 15px !important;
   background-color: #fff;
   padding: 0px 30px 30px 60px;
@@ -132,10 +144,7 @@ export const Card = styled(MDBCard)`
 
 export default () => (
   <div>
-    <Hero
-      fluid
-      style={{ backgroundColor: '#f5f5f5', boxShadow: 'none' }}
-    ></Hero>
+    <Hero fluid></Hero>
     <Root>
       <Card>
         <MDBRow>
