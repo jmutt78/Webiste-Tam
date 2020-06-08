@@ -1,18 +1,19 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-import { MDBContainer } from "mdbreact"
+import { MDBContainer } from 'mdbreact'
 
-import buns from "../../images/buns.jpg"
-import espn from "../../images/espn.png"
-import fox from "../../images/fox.jpg"
-import tv from "../../images/fit.png"
+import buns from '../../images/buns.jpg'
+import espn from '../../images/espn.png'
+import fox from '../../images/fox.jpg'
+import tv from '../../images/fit.png'
+import media from '../../images/media.jpg'
 
 export const Root = styled(MDBContainer)`
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Helvetica", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  font-family: 'Helvetica', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
   .title {
     margin: 20px;
     text-align: center;
@@ -36,39 +37,49 @@ export const ImageWrapper = styled.div`
 
   img {
     height: auto;
-    width: 100px;
+    width: 700px;
+  }
+
+  @media (max-width: 1000px) {
+    img {
+      width: 600px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    img {
+      width: 500px;
+    }
   }
 
   @media (max-width: 560px) {
     img {
-      height: auto;
-      width: 80px;
+      width: 400px;
     }
   }
 
   @media (max-width: 415px) {
     img {
-      height: auto;
-      width: 70px;
+      width: 300px;
     }
   }
 `
 
 const featuredArr = [
   {
-    alt: "Buns of steel dvd",
+    alt: 'Buns of steel dvd',
     image: buns,
   },
   {
-    alt: "espn logo",
+    alt: 'espn logo',
     image: espn,
   },
   {
-    alt: "Fox Sports logo",
+    alt: 'Fox Sports logo',
     image: fox,
   },
   {
-    alt: "FitTv logo",
+    alt: 'FitTv logo',
     image: tv,
   },
 ]
@@ -79,11 +90,15 @@ export default () => (
       <h2>Tamilee has been featured in:</h2>
     </div>
     <ImageWrapper>
-      {featuredArr.map(({ alt, image }) => (
-        <div className="logo" key={alt}>
-          <img src={image} alt={alt} />
-        </div>
-      ))}
+      <div className="logo">
+        <img src={media} alt="" />
+      </div>
     </ImageWrapper>
   </Root>
 )
+
+// {featuredArr.map(({ alt, image }) => (
+//   <div className="logo" key={alt}>
+//     <img src={image} alt={alt} />
+//   </div>
+// ))}
